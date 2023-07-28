@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima tempo</title>
+    <link rel="stylesheet" href="estilos/index.css" />
+    <script src="scripts/index.js" defer></script>
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main id="mainContent">
+      <div id="mainContentFirstPart">
+        <h3 id="mainContentTitle">Confira o clima da sua cidade:</h3>
+        <br />
+        <input
+          type="text"
+          name="cityInput"
+          id="cityInput"
+          placeholder="Digite o nome da sua cidade"
+        />
+        <button id="searchButton">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <hr />
+      <div id="mainContentSecondPart">
+        <div id="mainContentButtonsPart">
+          <button class="mainContentButtonsPartButtons" value="Viena">
+            Viena
+          </button>
+          <button class="mainContentButtonsPartButtons" value="Copenhague">
+            Copenhague
+          </button>
+          <button class="mainContentButtonsPartButtons" value="Zurique">
+            Zurique
+          </button>
+          <button class="mainContentButtonsPartButtons" value="Vancouver">
+            Vancouver
+          </button>
+          <button class="mainContentButtonsPartButtons" value="Genebra">
+            Genebra
+          </button>
+          <button class="mainContentButtonsPartButtons" value="Frankfurt">
+            Frankfurt
+          </button>
+          <button class="mainContentButtonsPartButtons" value="Osaka">
+            Osaka
+          </button>
+          <button class="mainContentButtonsPartButtons" value="Maceió">
+            Maceió
+          </button>
+        </div>
+      </div>
+      <div id="weatherData" class="hide">
+        <h2>
+          <i class="fa-solid fa-location-dot"></i>
+          <span id="city"></span>
+          <img src="" id="coutnryFlag" alt="Bandeira do pais" />
+        </h2>
+        <p id="temperature"><span></span>&deg;C</p>
+        <div id="descriptionContainer">
+          <p id="description"></p>
+          <img src="" alt="Condições do tempo" id="weatherIcon" />
+        </div>
+        <div id="detailsContainer">
+          <p id="umidity">
+            <i class="fa-solid fa-droplet"></i>
+            <span></span>%
+          </p>
+          <p id="wind">
+            <i class="fa-solid fa-wind"></i>
+            <span></span>Km/h
+          </p>
+        </div>
+      </div>
+      <div id="erro" class="hide">
+        <h2>Não foi possível encontrar o clima de uma cidade com este nome!</h2>
+      </div>
+      <div id="carregando" class="hide">
+        <h2>Carregando...</h2>
+      </div>
+    </main>
+  </body>
+</html>
