@@ -6,6 +6,11 @@
     <title>Clima tempo</title>
     <link rel="stylesheet" href="estilos/index.css" />
     <script src="scripts/index.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-16x16.png"
+      type="image/x-icon"
+    />
     <!--Font Awesome-->
     <link
       rel="stylesheet"
@@ -33,30 +38,46 @@
       <hr />
       <div id="mainContentSecondPart">
         <div id="mainContentButtonsPart">
-          <button class="mainContentButtonsPartButtons" value="Viena">
-            Viena
-          </button>
-          <button class="mainContentButtonsPartButtons" value="Copenhague">
-            Copenhague
-          </button>
-          <button class="mainContentButtonsPartButtons" value="Zurique">
-            Zurique
-          </button>
-          <button class="mainContentButtonsPartButtons" value="Vancouver">
-            Vancouver
-          </button>
-          <button class="mainContentButtonsPartButtons" value="Genebra">
-            Genebra
-          </button>
-          <button class="mainContentButtonsPartButtons" value="Frankfurt">
-            Frankfurt
-          </button>
-          <button class="mainContentButtonsPartButtons" value="Osaka">
-            Osaka
-          </button>
-          <button class="mainContentButtonsPartButtons" value="Maceió">
-            Maceió
-          </button>
+          <input
+            type="button"
+            class="mainContentButtonsPartButtons"
+            value="Viena"
+          />
+          <input
+            type="button"
+            class="mainContentButtonsPartButtons"
+            value="Copenhague"
+          />
+          <input
+            type="button"
+            class="mainContentButtonsPartButtons"
+            value="Zurique"
+          />
+          <input
+            type="button"
+            class="mainContentButtonsPartButtons"
+            value="Vancouver"
+          />
+          <input
+            type="button"
+            class="mainContentButtonsPartButtons"
+            value="Genebra"
+          />
+          <input
+            type="button"
+            class="mainContentButtonsPartButtons"
+            value="Frankfurt"
+          />
+          <input
+            type="button"
+            class="mainContentButtonsPartButtons"
+            value="Osaka"
+          />
+          <input
+            type="button"
+            class="mainContentButtonsPartButtons"
+            value="Maceió"
+          />
         </div>
       </div>
       <div id="weatherData" class="hide">
@@ -71,7 +92,7 @@
           <img src="" alt="Condições do tempo" id="weatherIcon" />
         </div>
         <div id="detailsContainer">
-          <p id="umidity">
+          <p id="humidity">
             <i class="fa-solid fa-droplet"></i>
             <span></span>%
           </p>
@@ -84,8 +105,8 @@
       <div id="erro" class="hide">
         <h2>Não foi possível encontrar o clima de uma cidade com este nome!</h2>
       </div>
-      <div id="carregando" class="hide">
-        <h2>Carregando...</h2>
+      <div class="hide" id="loadingPart">
+        <span id="spanLoading"></span>
       </div>
     </main>
   </body>
