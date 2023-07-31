@@ -158,3 +158,9 @@ body {
   margin: 0.6rem;
   padding: 0.6rem;
 }
+
+@media (max-width: 400px) {
+  #cityInput {
+    width: 200px;
+  }
+}
